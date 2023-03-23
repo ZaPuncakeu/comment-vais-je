@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalActivity">
+
+    <ProgressBar
+        android:id="@+id/personal_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="25"
+        android:progressDrawable="@drawable/redprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personal_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/personal_screen_title"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/personal_progress_bar" />
+
+    <TextView
+        android:id="@+id/personal_label_gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:labelFor="@id/personal_age_edit_text"
+        android:text="@string/personal_screen_gender_question"
+        app:layout_constraintEnd_toEndOf="@+id/personal_title_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_title_text_view" />
+
+    <RadioGroup
+        android:id="@+id/personal_gender_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/personal_label_gender_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_label_gender_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_label_gender_text_view">
+
+        <RadioButton
+            android:id="@+id/personal_rb_man"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/personal_screen_man_choice" />
+
+        <RadioButton
+            android:id="@+id/personal_rb_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/personal_screen_woman_choice" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/personal_age_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:labelFor="@id/personal_age_edit_text"
+        android:text="@string/personal_screen_age_question"
+        app:layout_constraintEnd_toEndOf="@+id/personal_gender_radio_group"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/personal_gender_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/personal_gender_radio_group" />
+
+    <EditText
+        android:id="@+id/personal_age_edit_text"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/personal_age_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_age_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_age_text_view" />
+
+    <TextView
+        android:id="@+id/personal_weight_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:labelFor="@id/personal_weight_edit_text"
+        android:text="@string/personal_screen_weight_question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_age_edit_text" />
+
+    <EditText
+        android:id="@+id/personal_weight_edit_text"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/personal_weight_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_weight_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_weight_text_view" />
+
+    <TextView
+        android:id="@+id/personal_height_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:labelFor="@id/personal_height_edit_text"
+        android:text="@string/personal_screen_height_question"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_weight_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/personal_weight_text_view" />
+
+    <EditText
+        android:id="@+id/personal_height_edit_text"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_weight_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/personal_height_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_height_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_weight_text_view" />
+
+    <TextView
+        android:id="@+id/personal_no_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_no"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_married_switch"
+        app:layout_constraintEnd_toStartOf="@+id/personal_married_switch"
+        app:layout_constraintStart_toStartOf="@+id/personal_married_text_view"
+        app:layout_constraintTop_toTopOf="@+id/personal_married_switch"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Switch
+        android:id="@+id/personal_married_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/personal_next_button"
+        app:layout_constraintEnd_toEndOf="@+id/personal_married_text_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_married_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/personal_married_text_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/personal_yes_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/global_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_married_switch"
+        app:layout_constraintEnd_toEndOf="@+id/personal_married_text_view"
+        app:layout_constraintStart_toEndOf="@+id/personal_married_switch"
+        app:layout_constraintTop_toTopOf="@+id/personal_married_switch"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/personal_next_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/personal_married_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/personal_screen_married_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_height_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

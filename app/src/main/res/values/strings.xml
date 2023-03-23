@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">Comment vais-je</string>
+    <string name="main_screen_title">I test my mental health</string>
+    <string name="main_screen_text">By answering 20 questions about your current mental state</string>
+    <string name="main_screen_username_hint">Enter your username</string>
+    <string name="main_screen_button_start">Start</string>
+    <string name="main_screen_logo_description">A logo with a heart shape and text around saying \"comment vais-je\"</string>
+    <string name="personal_screen_title">Tell us about yourself</string>
+    <string name="personal_screen_gender_question">You are...</string>
+    <string name="personal_screen_age_question">How old are you?</string>
+    <string name="personal_screen_weight_question">What is your weight (in Kg)</string>
+    <string name="personal_screen_height_question">What is your height? (in Cm)</string>
+    <string name="personal_screen_married_question">Are you married?</string>
+    <string name="personal_screen_man_choice">A man</string>
+    <string name="personal_screen_woman_choice">A woman</string>
+    <string name="global_next">Next</string>
+    <string name="global_yes">Yes</string>
+    <string name="global_no">No</string>
+    <string name="global_man">Man</string>
+    <string name="global_woman">Woman</string>
+</resources>

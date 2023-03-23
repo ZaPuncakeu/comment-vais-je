@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen_title">Je teste ma santé mentale</string>
+    <string name="main_screen_text">En répondant à 20 questions sur votre état mental actuel</string>
+    <string name="main_screen_username_hint">Entrez votre nom d\'utilisateur</string>
+    <string name="main_screen_button_start">Commencez</string>
+    <string name="main_screen_logo_description">Un logo avec une forme de cœur et un texte autour disant \"comment vais-je\"</string>
+    <string name="personal_screen_title">Parlez-nous de vous</string>
+    <string name="personal_screen_gender_question">Vous êtes...</string>
+    <string name="personal_screen_age_question">Quel âge avez-vous ?</string>
+    <string name="personal_screen_weight_question">Quel est votre poids (en Kg)</string>
+    <string name="personal_screen_height_question">Quel est votre taille (en Cm)</string>
+    <string name="personal_screen_married_question">Êtes-vous marié(e) ?</string>
+    <string name="personal_screen_man_choice">Un homme</string>
+    <string name="global_next">Suivant</string>
+    <string name="personal_screen_woman_choice">Une femme</string>
+    <string name="global_yes">Oui</string>
+    <string name="global_no">Non</string>
+    <string name="global_man">Homme</string>
+    <string name="global_woman">Femme</string>
+</resources>

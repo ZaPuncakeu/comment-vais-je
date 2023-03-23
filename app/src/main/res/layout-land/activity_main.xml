@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_img4"
+        android:layout_width="211dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="48dp"
+        android:contentDescription="@string/main_screen_logo_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/logo_no_background" />
+
+    <TextView
+        android:id="@+id/main_title_text_view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/main_screen_title"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_img4" />
+
+    <TextView
+        android:id="@+id/main_screen_text4"
+        android:layout_width="306dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/main_screen_text"
+        app:layout_constraintEnd_toEndOf="@+id/main_title_text_view4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_title_text_view4"
+        app:layout_constraintTop_toBottomOf="@+id/main_title_text_view4" />
+
+    <EditText
+        android:id="@+id/main_screen_username_edit_text4"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/main_screen_username_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="@+id/main_screen_text4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_screen_text4"
+        app:layout_constraintTop_toBottomOf="@+id/main_screen_text4" />
+
+    <Button
+        android:id="@+id/main_screen_btn_start4"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/logo_color"
+        android:onClick="start"
+        android:text="@string/main_screen_button_start"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/main_screen_username_edit_text4"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/main_screen_username_edit_text4"
+        app:layout_constraintTop_toBottomOf="@+id/main_screen_username_edit_text4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
