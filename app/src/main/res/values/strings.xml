@@ -18,4 +18,13 @@
     <string name="global_no">No</string>
     <string name="global_man">Man</string>
     <string name="global_woman">Woman</string>
+    <string name="global_previous">Previous</string>
+    <string name="section_1_question_1">How are you feeling today?</string>
+    <string name="global_good">Good</string>
+    <string name="global_fairly_good">Fairly good</string>
+    <string name="global_neutral">Neutral</string>
+    <string name="global_very_good">Very good</string>
+    <string name="global_not_good">Not good</string>
+    <string name="section_1_question_2_screen_not_stressed">Not stressed</string>
+    <string name="section_1_question_2_screen_extreamly_stressed">Extreamly stressed</string>
 </resources>

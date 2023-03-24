@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section1Page1">
+
+    <Button
+        android:id="@+id/section_1_question_1_next_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar3" />
+
+    <Button
+        android:id="@+id/section_1_question_1_previous_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/section_1_question_1_next_button"
+        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar3"
+        app:layout_constraintTop_toTopOf="@+id/section_1_question_1_next_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/personal_progress_bar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="25"
+        android:progressDrawable="@drawable/redprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/section1_page1_title_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/section_1_question_1"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar3"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar3"
+        app:layout_constraintTop_toBottomOf="@+id/personal_progress_bar3" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/section_1_question_1_previous_button"
+        app:layout_constraintEnd_toEndOf="@+id/section1_page1_title_text_view2"
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_title_text_view2"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page1_title_text_view2">
+
+        <RadioButton
+            android:id="@+id/section_1_question_1_rb_not_good"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="@string/global_not_good"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/section_1_question_1_rb_neutral"
+            android:layout_width="176dp"
+            android:layout_height="67dp"
+            android:text="@string/global_neutral"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/section_1_question_1_rb_fairly_good"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="@string/global_fairly_good"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/section_1_question_1_rb_very_good"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="@string/global_very_good"
+            android:textSize="24sp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

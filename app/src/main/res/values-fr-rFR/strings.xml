@@ -18,4 +18,13 @@
     <string name="global_no">Non</string>
     <string name="global_man">Homme</string>
     <string name="global_woman">Femme</string>
+    <string name="global_previous">Précédent</string>
+    <string name="section_1_question_1">Comment vous sentez-vous aujourd\'hui</string>
+    <string name="global_good">Bien</string>
+    <string name="global_fairly_good">Assez bien</string>
+    <string name="global_neutral">Neutre</string>
+    <string name="global_very_good">Très bien</string>
+    <string name="global_not_good">Pas bien</string>
+    <string name="section_1_question_2_screen_not_stressed">Pas stressé</string>
+    <string name="section_1_question_2_screen_extreamly_stressed">Hypertendu</string>
 </resources>
