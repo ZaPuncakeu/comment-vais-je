@@ -27,4 +27,5 @@
     <string name="global_not_good">Not good</string>
     <string name="section_1_question_2_screen_not_stressed">Not stressed</string>
     <string name="section_1_question_2_screen_extreamly_stressed">Extreamly stressed</string>
+    <string name="section_1_question_2_screen_title">How stressed are you?</string>
 </resources>

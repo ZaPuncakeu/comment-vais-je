@@ -27,4 +27,5 @@
     <string name="global_not_good">Pas bien</string>
     <string name="section_1_question_2_screen_not_stressed">Pas stressé</string>
     <string name="section_1_question_2_screen_extreamly_stressed">Hypertendu</string>
+    <string name="section_1_question_2_screen_title">Quel est votre niveau de stress ?</string>
 </resources>
