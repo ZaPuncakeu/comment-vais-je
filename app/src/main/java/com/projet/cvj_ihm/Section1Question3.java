@@ -7,14 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Section1Question2 extends AppCompatActivity {
+public class Section1Question3 extends AppCompatActivity {
     private Button nextBtn;
     private Button prevBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section1_question2);
-        nextBtn = (Button) findViewById(R.id.section_1_question_2_next_button);
+        setContentView(R.layout.activity_section1_question3);
+        nextBtn = (Button)findViewById(R.id.section_1_question_3_next_button);
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -22,21 +23,21 @@ public class Section1Question2 extends AppCompatActivity {
             }
         });
 
-        prevBtn = (Button) findViewById(R.id.section_1_question_2_previous_button);
+        prevBtn = (Button) findViewById(R.id.section_1_question_3_previous_button);
         prevBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 previousPage(view);
             }
         });
-    }
 
+    }
     public void nextPage(View v){
-        Intent intent = new Intent(this, Section1Question3.class);
+        Intent intent = new Intent(this, Section1Title.class);
         startActivity(intent);
     }
-
-    public void previousPage(View v) {
-        finish();
+    public void previousPage(View v){
+        Intent intent = new Intent(this, Section1Question2.class);
+        startActivity(intent);
     }
 }

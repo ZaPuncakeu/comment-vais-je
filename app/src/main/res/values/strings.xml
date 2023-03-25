@@ -28,4 +28,12 @@
     <string name="section_1_question_2_screen_not_stressed">Not stressed</string>
     <string name="section_1_question_2_screen_extreamly_stressed">Extreamly stressed</string>
     <string name="section_1_question_2_screen_title">How stressed are you?</string>
+    <string name="section_1_question_3_screen_title">How often do you feel tired</string>
+    <string name="global_not_much">not much</string>
+    <string name="global_pretty_often">pretty often</string>
+    <string name="global_all_the_time">all the time</string>
+    <string name="personal_screen_Nothing_ruin_myDay">Nothing can get through me</string>
+    <string name="personal_screen_ruin_myDay">The slightest things could ruin my day</string>
+    <string name="section_1_question_4_screen_title">How is your anger management?</string>
+    <string name="section_1question_4_screen_title">Do you often feel desperate, Angry or irritated?</string>
 </resources>

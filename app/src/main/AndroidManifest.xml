@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Cvjihm"
         tools:targetApi="31">
         <activity
+            android:name=".Section1Question3"
+            android:exported="false" />
+        <activity
             android:name=".Section1Question2"
             android:exported="false" />
         <activity

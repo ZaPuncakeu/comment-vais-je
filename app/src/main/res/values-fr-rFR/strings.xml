@@ -28,4 +28,12 @@
     <string name="section_1_question_2_screen_not_stressed">Pas stressé</string>
     <string name="section_1_question_2_screen_extreamly_stressed">Hypertendu</string>
     <string name="section_1_question_2_screen_title">Quel est votre niveau de stress ?</string>
+    <string name="section_1_question_3_screen_title">Combien de fois vous sentez-vous fatigué(e) ?</string>
+    <string name="global_all_the_time">Pas tout le temps</string>
+    <string name="global_pretty_often">Assez souvent</string>
+    <string name="global_not_much">Pas beaucoup</string>
+    <string name="section_1question_4_screen_title">Vous sentez-vous souvent désespéré, en colère ou irrité ?</string>
+    <string name="personal_screen_Nothing_ruin_myDay">Rien ne peut m\'atteindre</string>
+    <string name="personal_screen_ruin_myDay">Les moindres détails peuvent gâcher ma journée</string>
+    <string name="section_1_question_4_screen_title">Comment gérez-vous votre colère ?</string>
 </resources>

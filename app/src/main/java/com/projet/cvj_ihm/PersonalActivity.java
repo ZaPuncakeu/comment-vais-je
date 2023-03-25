@@ -21,6 +21,7 @@ public class PersonalActivity extends AppCompatActivity {
                 nextPage(view);
             }
         });
+
     }
 
     public void nextPage(View v){
