@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section1Question4">
+
+    <Button
+        android:id="@+id/section_1_question_4_previous_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_previous"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar6"
+        app:layout_constraintTop_toTopOf="@+id/section_1_question_4_next_button" />
+
+    <Button
+        android:id="@+id/section_1_question_4_next_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar6" />
+
+    <TextView
+        android:id="@+id/section_1_question_4_ruin_text_view3"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:text="@string/personal_screen_Nothing_ruin_myDay"
+        app:layout_constraintBottom_toBottomOf="@+id/section_1_question_2_stress_level_slider3"
+        app:layout_constraintEnd_toEndOf="@+id/section1_question4_title_text_view2"
+        app:layout_constraintTop_toTopOf="@+id/section_1_question_2_stress_level_slider3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/section_1_question_4_not_ruin_text_view3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_screen_ruin_myDay"
+        app:layout_constraintBottom_toBottomOf="@+id/section_1_question_2_stress_level_slider3"
+        app:layout_constraintStart_toStartOf="@+id/section1_question4_title_text_view2"
+        app:layout_constraintTop_toTopOf="@+id/section_1_question_2_stress_level_slider3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/section_1_question_2_stress_level_slider3"
+        android:layout_width="213dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="48dp"
+        android:max="100"
+        android:progress="50"
+        app:layout_constraintBottom_toTopOf="@+id/section_1_question_4_next_button"
+        app:layout_constraintStart_toStartOf="@+id/section_1_question_4_not_ruin_text_view3"
+        app:layout_constraintTop_toBottomOf="@+id/section1_question4_title_text_view2"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/section1_question4_title_text_view2"
+        android:layout_width="382dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/section_1_question_5_screen_title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar6"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar6"
+        app:layout_constraintTop_toBottomOf="@+id/personal_progress_bar6" />
+
+    <ProgressBar
+        android:id="@+id/personal_progress_bar6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:progress="25"
+        android:progressDrawable="@drawable/redprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

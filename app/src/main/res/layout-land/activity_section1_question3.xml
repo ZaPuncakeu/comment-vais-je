@@ -26,22 +26,22 @@
         android:background="@color/logo_color"
         android:text="@string/global_previous"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@id/section_1_question_3_next_button"
+        app:layout_constraintBottom_toBottomOf="@+id/section_1_question_1_next_button"
         app:layout_constraintStart_toStartOf="@+id/personal_progress_bar5"
-        app:layout_constraintTop_toTopOf="@+id/section_1_question_3_next_button" />
+        app:layout_constraintTop_toTopOf="@id/section_1_question_3_next_button" />
 
     <TextView
         android:id="@+id/section1_question3_title_text_view3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:text="@string/section_1_question_3_screen_title"
         android:textAllCaps="true"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/personal_progress_bar5" />
 
@@ -63,37 +63,43 @@
 
     <RadioGroup
         android:id="@+id/personal_feeling_radio_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="681dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="52dp"
+        android:measureWithLargestChild="false"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/section1_question3_title_text_view3">
 
         <RadioButton
             android:id="@+id/global_not_much"
-            android:layout_width="match_parent"
-            android:layout_height="108dp"
+            android:layout_width="182dp"
+            android:layout_height="85dp"
+            android:layout_marginHorizontal="15dp"
             android:minHeight="48dp"
             android:text="@string/global_not_much"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="132dp"
+            android:layout_width="178dp"
+            android:layout_height="91dp"
+            android:layout_marginHorizontal="15dp"
             android:minHeight="48dp"
             android:text="@string/global_pretty_often"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/global_all_the_time"
-            android:layout_width="match_parent"
-            android:layout_height="141dp"
+            android:layout_width="189dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="15dp"
             android:elegantTextHeight="false"
             android:minHeight="48dp"
             android:text="@string/global_all_the_time"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

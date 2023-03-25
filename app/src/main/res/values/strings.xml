@@ -34,6 +34,6 @@
     <string name="global_all_the_time">all the time</string>
     <string name="personal_screen_Nothing_ruin_myDay">Nothing can get through me</string>
     <string name="personal_screen_ruin_myDay">The slightest things could ruin my day</string>
-    <string name="section_1_question_4_screen_title">How is your anger management?</string>
-    <string name="section_1question_4_screen_title">Do you often feel desperate, Angry or irritated?</string>
+    <string name="section_1_question_5_screen_title">How is your anger management?</string>
+    <string name="section_1_question_4_screen_title">Do you often feel desperate, Angry or irritated?</string>
 </resources>
