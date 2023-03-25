@@ -67,7 +67,7 @@
         android:layout_width="382dp"
         android:layout_height="88dp"
         android:layout_marginTop="52dp"
-        android:text="@string/section_1_question_5_screen_title"
+        android:text="@string/section_1_question_4_screen_title"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/black"

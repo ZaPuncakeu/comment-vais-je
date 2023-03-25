@@ -79,7 +79,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/global_pretty_often"
             android:layout_width="match_parent"
             android:layout_height="132dp"
             android:minHeight="48dp"

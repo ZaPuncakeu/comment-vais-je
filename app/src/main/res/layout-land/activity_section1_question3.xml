@@ -64,7 +64,7 @@
     <RadioGroup
         android:id="@+id/personal_feeling_radio_group"
         android:layout_width="681dp"
-        android:layout_height="106dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:measureWithLargestChild="false"
         android:orientation="horizontal"
@@ -83,7 +83,7 @@
             android:textSize="24sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/global_pretty_often"
             android:layout_width="178dp"
             android:layout_height="91dp"
             android:layout_marginHorizontal="15dp"
