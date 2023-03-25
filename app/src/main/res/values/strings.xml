@@ -36,4 +36,14 @@
     <string name="personal_screen_ruin_myDay">The slightest things could ruin my day</string>
     <string name="section_1_question_5_screen_title">How is your anger management?</string>
     <string name="section_1_question_4_screen_title">Do you often feel desperate, Angry or irritated?</string>
+    <string name="section_2_title">TELL US ABOUT YOUR HABITS</string>
+    <string name="section_2_question_1_screen_title">Do you smoke?</string>
+    <string name="global_occasionally">Occasionally</string>
+    <string name="section_3_question_2_screen_title">Do you exercise?</string>
+    <string name="global_rarely">Rarely</string>
+    <string name="global_regularly">Regularly</string>
+    <string name="section_2_question_3_screen_title">How would you rate your sleep?</string>
+    <string name="global_insomnia">Insomnia</string>
+    <string name="global_normal">Normal</string>
+    <string name="section_2_question_4_screen_title">Do you drink alcohol?</string>
 </resources>
