@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Section2Question2 extends AppCompatActivity {
+public class Section2Question4 extends AppCompatActivity {
 
     private Button nextBtn;
     private Button prevBtn;
@@ -15,9 +15,8 @@ public class Section2Question2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section2_question2);
-
-        nextBtn = (Button) findViewById(R.id.section_2_question_2_next_button);
+        setContentView(R.layout.activity_section2_question4);
+        nextBtn = (Button) findViewById(R.id.section_2_question_4_next_button);
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +24,7 @@ public class Section2Question2 extends AppCompatActivity {
             }
         });
 
-        prevBtn = (Button) findViewById(R.id.section_2_question_2_previous_button);
+        prevBtn = (Button) findViewById(R.id.section_2_question_4_previous_button);
         prevBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +38,7 @@ public class Section2Question2 extends AppCompatActivity {
         startActivity(intent);
     }
     public void previousPage(View v){
-        Intent intent = new Intent(this, Section2Question1.class);
+        Intent intent = new Intent(this, Section2Question3.class);
         startActivity(intent);
     }
 }
