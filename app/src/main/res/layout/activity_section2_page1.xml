@@ -48,7 +48,7 @@
 
     <TextView
         android:id="@+id/section2_page1_screen_indication_tv"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:labelFor="@id/personal_screen_age_input_et"
@@ -113,7 +113,7 @@
         android:background="#FFFFFF"
         android:contentDescription="@string/global_happy"
         app:layout_constraintBottom_toBottomOf="@+id/section2_page1_screen_anger_reaction"
-        app:layout_constraintEnd_toEndOf="@+id/section2_page1_screen_pb"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page1_screen_indication_tv"
         app:layout_constraintTop_toTopOf="@+id/section2_page1_screen_anger_reaction"
         app:srcCompat="@drawable/happy" />
 

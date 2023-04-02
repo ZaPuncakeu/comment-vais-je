@@ -36,7 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_blood_pressure_input_et"
+        android:labelFor="@id/section3_page1_screen_blood_pressure_input_et"
         android:text="@string/section3_page1_screen_blood_pressure"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_pressure_cb"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_pressure_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_blood_pressure_input_et"
+        android:id="@+id/section3_page1_screen_blood_pressure_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -72,7 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_cholesterol_input_et"
+        android:labelFor="@id/section3_page1_screen_cholesterol_input_et"
         android:text="@string/section3_page1_screen_cholesterol"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_cholesterol_cb"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_cholesterol_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_cholesterol_input_et"
+        android:id="@+id/section3_page1_screen_cholesterol_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -104,7 +104,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_blood_sugar_input_et"
+        android:labelFor="@id/section3_page1_screen_blood_sugar_input_et"
         android:text="@string/section3_page1_screen_blood_sugar"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_sugar_cb"
@@ -113,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_sugar_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_blood_sugar_input_et"
+        android:id="@+id/section3_page1_screen_blood_sugar_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"

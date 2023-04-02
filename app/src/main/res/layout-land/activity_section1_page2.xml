@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section1_page2_screen_pb" />
 
     <TextView
-        android:id="@+id/section1_page1_screen_not_angry_option_label_tv"
+        android:id="@+id/section1_page2_screen_not_angry_option_label_tv"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -70,30 +70,30 @@
         app:layout_constraintEnd_toEndOf="@+id/section1_page2_screen_pb" />
 
     <SeekBar
-        android:id="@+id/section1_page1_screen_angry_sl"
+        android:id="@+id/section1_page2_screen_angry_sl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:max="100"
         android:progress="50"
-        app:layout_constraintBottom_toBottomOf="@+id/section1_page1_screen_not_angry_option_label_tv"
-        app:layout_constraintEnd_toStartOf="@+id/section1_page1_screen_angry_option_label_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/section1_page2_screen_not_angry_option_label_tv"
+        app:layout_constraintEnd_toStartOf="@+id/section1_page2_screen_angry_option_label_tv"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/section1_page1_screen_not_angry_option_label_tv"
-        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_angry_option_label_tv" />
+        app:layout_constraintStart_toEndOf="@+id/section1_page2_screen_not_angry_option_label_tv"
+        app:layout_constraintTop_toTopOf="@+id/section1_page2_screen_angry_option_label_tv" />
 
     <TextView
-        android:id="@+id/section1_page1_screen_angry_option_label_tv"
+        android:id="@+id/section1_page2_screen_angry_option_label_tv"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="@string/section1_page2_screen_ruin_day"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/section1_page1_screen_not_stressed_option_label_tv"
         app:layout_constraintEnd_toEndOf="@+id/section1_page2_screen_anger_label_tv"
-        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_not_angry_option_label_tv"
+        app:layout_constraintTop_toTopOf="@+id/section1_page2_screen_not_angry_option_label_tv"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/section1_page1_screen_anger_management_label_tv"
+        android:id="@+id/section1_page2_screen_anger_management_label_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -102,31 +102,31 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/section1_page2_screen_anger_label_tv"
         app:layout_constraintStart_toStartOf="@+id/section1_page2_screen_pb"
-        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_angry_option_label_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/section1_page2_screen_angry_option_label_tv" />
 
     <RadioGroup
         android:id="@+id/section1_page1_screen_tired_rg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/section1_page1_screen_anger_management_label_tv"
-        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_anger_management_label_tv"
-        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_anger_management_label_tv">
+        app:layout_constraintEnd_toEndOf="@+id/section1_page2_screen_anger_management_label_tv"
+        app:layout_constraintStart_toStartOf="@+id/section1_page2_screen_anger_management_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page2_screen_anger_management_label_tv">
 
         <RadioButton
-            android:id="@+id/section1_page1_screen_anger_management_not_good_option_rb"
+            android:id="@+id/section1_page2_screen_anger_management_not_good_option_rb"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="@string/global_not_good" />
 
         <RadioButton
-            android:id="@+id/section1_page2_anger_management_neutral_option_rb"
+            android:id="@+id/section1_page2_screen_anger_management_neutral_option_rb"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="@string/global_neutral" />
 
         <RadioButton
-            android:id="@+id/section1_page2_anger_management_very_good_option_rb"
+            android:id="@+id/section1_page2_screen_anger_management_very_good_option_rb"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="@string/global_very_good" />

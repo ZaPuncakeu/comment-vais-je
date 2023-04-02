@@ -37,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_blood_pressure_input_et"
+        android:labelFor="@id/section3_page1_screen_blood_pressure_input_et"
         android:text="@string/section3_page1_screen_blood_pressure"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_pressure_cb"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_pressure_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_blood_pressure_input_et"
+        android:id="@+id/section3_page1_screen_blood_pressure_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -65,14 +65,14 @@
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_pb"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_pb"
-        app:layout_constraintTop_toBottomOf="@+id/section3_page1_blood_pressure_input_et" />
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_blood_pressure_input_et" />
 
     <TextView
         android:id="@+id/section3_page1_screen_cholesterol_label_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_cholesterol_input_et"
+        android:labelFor="@id/section3_page1_screen_cholesterol_input_et"
         android:text="@string/section3_page1_screen_cholesterol"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_pressure_cb"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_cholesterol_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_cholesterol_input_et"
+        android:id="@+id/section3_page1_screen_cholesterol_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -98,17 +98,17 @@
         android:layout_marginTop="32dp"
         android:minHeight="48dp"
         android:text="@string/section3_page1_screen_know_blood_sugar"
-        app:layout_constraintEnd_toEndOf="@+id/section3_page1_cholesterol_input_et"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_cholesterol_input_et"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/section3_page1_cholesterol_input_et"
-        app:layout_constraintTop_toBottomOf="@+id/section3_page1_cholesterol_input_et" />
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_cholesterol_input_et"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_cholesterol_input_et" />
 
     <TextView
         android:id="@+id/section3_page1_screen_blood_sugar_label_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@id/section3_page1_blood_sugar_input_et"
+        android:labelFor="@id/section3_page1_screen_blood_sugar_input_et"
         android:text="@string/section3_page1_screen_blood_sugar"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_sugar_cb"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_sugar_cb" />
 
     <EditText
-        android:id="@+id/section3_page1_blood_sugar_input_et"
+        android:id="@+id/section3_page1_screen_blood_sugar_input_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"

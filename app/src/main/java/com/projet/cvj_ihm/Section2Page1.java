@@ -16,6 +16,15 @@ public class Section2Page1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section2_page1);
+
+        if(!getIntent().hasExtra("person")) {
+            Utils.error(this, R.string.global_missing_inputs);
+            finish();
+            return;
+        }
+
+        Person person = getIntent().getParcelableExtra("person");
+
         reactions = new ImageButton[5];
         reactions[0] = (ImageButton) findViewById(R.id.section2_page1_screen_sad_reaction);
         reactions[1] = (ImageButton) findViewById(R.id.section2_page1_screen_happy_reaction);
@@ -46,7 +55,17 @@ public class Section2Page1 extends AppCompatActivity {
                 this,
                 R.id.section2_page1_screen_next_btn,
                 R.id.section2_page1_screen_previous_btn,
-                Section2Page2.class
+                Section2Page2.class,
+                ()-> {
+                    if(selected == -1) {
+                        Utils.error(this, R.string.global_missing_inputs);
+                        return null;
+                    }
+
+                    person.setReaction(selected, 0);
+
+                    return person;
+                }
         );
     }
 }

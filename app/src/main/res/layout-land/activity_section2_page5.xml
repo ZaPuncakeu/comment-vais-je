@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="@+id/section2_page5_img" />
 
     <EditText
-        android:id="@+id/section2_page3_screen_description_et2"
+        android:id="@+id/section2_page5_screen_description_et"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="5dp"

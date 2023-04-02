@@ -6,15 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Spinner
+        android:id="@+id/main_screen_lang_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/languages"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/main_screen_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/main_screen_img"
         android:layout_width="211dp"
         android:layout_height="256dp"
         android:layout_marginStart="32dp"
         android:contentDescription="@string/main_screen_logo_description"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_screen_lang_sp"
         app:srcCompat="@drawable/logo_no_background" />
 
     <TextView

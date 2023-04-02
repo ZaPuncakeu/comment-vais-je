@@ -65,4 +65,38 @@
     <string name="section3_page1_screen_know_blood_sugar">Do you know your blood sugar?</string>
     <string name="section3_page1_screen_blood_sugar">Please, input your blood sugar (in g/L)</string>
     <string name="global_view_summary">View summary</string>
+    <string name="main_screen_username_missing">Please, input your username...</string>
+    <string name="global_missing_inputs">Please, make sure to fill all the inputs</string>
+    <string name="summary_screen_section1_title">Personal Information</string>
+    <string name="summary_screen_gender">Gender:</string>
+    <string name="summary_screen_username">Username:</string>
+    <string name="summary_screen_gender_man">Man</string>
+    <string name="summary_screen_gender_woman">Woman</string>
+    <string name="summary_screen_age">Age:</string>
+    <string name="summary_screen_years_old">years old</string>
+    <string name="summary_screen_weight">Weight</string>
+    <string name="summary_screen_kg" translatable="false">Kg</string>
+    <string name="summary_screen_height">Height:</string>
+    <string name="summary_screen_cm" translatable="false">Cm</string>
+    <string name="summary_screen_married">Married:</string>
+    <string name="summary_screen_today_feeling">Today, you\'re feeling</string>
+    <string name="summary_screen_stress_level">Stress level:</string>
+    <string name="summary_screen_feeling_tired">You feel tired:</string>
+    <string name="summary_screen_anger_frequency">You feel angry/desperate/irritated</string>
+    <string name="summary_screen_out_of">times out of</string>
+    <string name="summary_screen_anger_management">Your anger management is:</string>
+    <string name="global_reaction_happy">Happy</string>
+    <string name="summary_screen_reaction_img_1">Your reaction to the first image:</string>
+    <string name="summary_screen_reaction_img_2">Your reaction to the 2nd image:</string>
+    <string name="summary_screen_rorschach_description">Your description of the Rorschach test n°</string>
+    <string name="summary_screen_blood_pressure">Blood pressure</string>
+    <string name="global_mm_hg" translatable="false">mm Hg</string>
+    <string name="global_mmol_l" translatable="false">mmol/L</string>
+    <string name="global_g_l" translatable="false">g/L</string>
+    <string name="summary_screen_cholesterol">Cholesterol</string>
+    <string name="summary_screen_blood_sugar">Blood sugar</string>
+    <string name="summary_screen_personal">Personal Information</string>
+    <string name="summary_screen_feelings">Your feelings</string>
+    <string name="summary_screen_reactions">Your reactions</string>
+    <string name="summary_screen_your_physical">Your physical health</string>
 </resources>
