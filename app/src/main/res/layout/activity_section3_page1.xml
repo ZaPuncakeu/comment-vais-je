@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section3Page1">
+
+    <ProgressBar
+        android:id="@+id/section3_page1_screen_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/redprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/section3_page1_screen_know_blood_pressure_cb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minHeight="48dp"
+        android:text="@string/section3_page1_screen_know_blood_pressure"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_pb"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_pb" />
+
+    <TextView
+        android:id="@+id/section3_page1_screen_blood_pressure_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@id/section3_page1_blood_pressure_input_et"
+        android:text="@string/section3_page1_screen_blood_pressure"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_pressure_cb"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_know_blood_pressure_cb"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_pressure_cb" />
+
+    <EditText
+        android:id="@+id/section3_page1_blood_pressure_input_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_blood_pressure_label_tv"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_blood_pressure_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_blood_pressure_label_tv" />
+
+    <CheckBox
+        android:id="@+id/section3_page1_screen_know_cholesterol_cb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minHeight="48dp"
+        android:text="@string/section3_page1_screen_know_cholesterol"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_pb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_blood_pressure_input_et" />
+
+    <TextView
+        android:id="@+id/section3_page1_screen_cholesterol_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@id/section3_page1_cholesterol_input_et"
+        android:text="@string/section3_page1_screen_cholesterol"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_pressure_cb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_know_cholesterol_cb"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_cholesterol_cb" />
+
+    <EditText
+        android:id="@+id/section3_page1_cholesterol_input_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_cholesterol_label_tv"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_cholesterol_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_cholesterol_label_tv" />
+
+    <CheckBox
+        android:id="@+id/section3_page1_screen_know_blood_sugar_cb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minHeight="48dp"
+        android:text="@string/section3_page1_screen_know_blood_sugar"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_cholesterol_input_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_cholesterol_input_et"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_cholesterol_input_et" />
+
+    <TextView
+        android:id="@+id/section3_page1_screen_blood_sugar_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@id/section3_page1_blood_sugar_input_et"
+        android:text="@string/section3_page1_screen_blood_sugar"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_know_blood_sugar_cb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_know_blood_sugar_cb"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_know_blood_sugar_cb" />
+
+    <EditText
+        android:id="@+id/section3_page1_blood_sugar_input_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_blood_sugar_label_tv"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_blood_sugar_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section3_page1_screen_blood_sugar_label_tv" />
+
+    <Button
+        android:id="@+id/section3_page1_screen_previous_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/section3_page1_screen_view_summary_btn"
+        app:layout_constraintStart_toStartOf="@+id/section3_page1_screen_pb"
+        app:layout_constraintTop_toTopOf="@+id/section3_page1_screen_view_summary_btn" />
+
+    <Button
+        android:id="@+id/section3_page1_screen_view_summary_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_view_summary"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/section3_page1_screen_pb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

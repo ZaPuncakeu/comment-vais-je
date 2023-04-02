@@ -9,35 +9,16 @@ import android.widget.Button;
 
 public class Section1Title extends AppCompatActivity {
 
-    private Button nextBtn;
-    private Button prevBtn;
+    PageHandler ph;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section1_title);
-        nextBtn = (Button) findViewById(R.id.section_1_page_1_next_button);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nextPage(view);
-            }
-        });
-
-        prevBtn = (Button) findViewById(R.id.section_1_page_1_previous_button);
-        prevBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                previousPage(view);
-            }
-        });
-    }
-
-    public void nextPage(View v){
-        Intent intent = new Intent(this, Section1Page1.class);
-        startActivity(intent);
-    }
-
-    public void previousPage(View v) {
-        finish();
+        ph = new PageHandler(
+                this,
+                R.id.section1_title_next_btn,
+                R.id.section1_title_previous_btn,
+                Section1Page1.class
+        );
     }
 }

@@ -14,31 +14,34 @@
         android:theme="@style/Theme.Cvjihm"
         tools:targetApi="31">
         <activity
-            android:name=".Section2Question4"
+            android:name=".Summary"
             android:exported="false" />
         <activity
-            android:name=".Section2Question3"
+            android:name=".Section3Page1"
             android:exported="false" />
         <activity
-            android:name=".Section2Question2"
+            android:name=".Section3Title"
             android:exported="false" />
         <activity
-            android:name=".Section2Question1"
+            android:name=".Section2Page5"
+            android:exported="false" />
+        <activity
+            android:name=".Section2Page4"
+            android:exported="false" />
+        <activity
+            android:name=".Section2Page3"
+            android:exported="false" />
+        <activity
+            android:name=".Section2Page2"
+            android:exported="false" />
+        <activity
+            android:name=".Section2Page1"
+            android:exported="false" />
+        <activity
+            android:name=".Section1Page2"
             android:exported="false" />
         <activity
             android:name=".Section2Title"
-            android:exported="false" />
-        <activity
-            android:name=".Section1Question5"
-            android:exported="false" />
-        <activity
-            android:name=".Section1Question4"
-            android:exported="false" />
-        <activity
-            android:name=".Section1Question3"
-            android:exported="false" />
-        <activity
-            android:name=".Section1Question2"
             android:exported="false" />
         <activity
             android:name=".Section1Page1"

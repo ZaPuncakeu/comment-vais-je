@@ -8,24 +8,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class PersonalActivity extends AppCompatActivity {
-
-    private Button nextBtn;
+    PageHandler ph;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal);
-        nextBtn = (Button)findViewById(R.id.personal_next_button);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nextPage(view);
-            }
-        });
-
-    }
-
-    public void nextPage(View v){
-        Intent intent = new Intent(this, Section1Title.class);
-        startActivity(intent);
+        ph = new PageHandler(
+                this,
+                R.id.personal_screen_next_btn,
+                R.id.personal_screen_previous_btn,
+                Section1Title.class
+        );
     }
 }

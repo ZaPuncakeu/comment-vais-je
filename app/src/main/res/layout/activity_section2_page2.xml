@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section2Page2">
+
+    <Button
+        android:id="@+id/section2_page2_screen_previous_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_previous"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/section2_page2_screen_next_btn"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintTop_toTopOf="@+id/section2_page2_screen_next_btn" />
+
+    <Button
+        android:id="@+id/section2_page2_screen_next_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_next"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_pb" />
+
+    <TextView
+        android:id="@+id/section2_page2_screen_description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/section2_global_feeling_image"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section2_page2_img" />
+
+    <TextView
+        android:id="@+id/section2_page2_screen_indication_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:labelFor="@id/personal_screen_age_input_et"
+        android:text="@string/section2_global_indication"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_description_tv"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_description_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section2_page2_screen_description_tv" />
+
+    <ProgressBar
+        android:id="@+id/section2_page2_screen_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/redprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/section2_page2_img"
+        android:layout_width="0dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="54dp"
+        android:contentDescription="@string/section2_page1_description"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section2_page2_screen_pb"
+        app:srcCompat="@drawable/section2_img1" />
+
+    <ImageButton
+        android:id="@+id/section2_page2_screen_anger_reaction"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/global_angry"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section2_page2_screen_indication_label_tv"
+        app:srcCompat="@drawable/angry"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/section2_page2_screen_neutral_reaction"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/global_neutral"
+        app:layout_constraintBottom_toBottomOf="@+id/section2_page2_screen_happy_reaction"
+        app:layout_constraintEnd_toStartOf="@+id/section2_page2_screen_happy_reaction"
+        app:layout_constraintStart_toEndOf="@+id/section2_page2_screen_anger_reaction"
+        app:layout_constraintTop_toTopOf="@+id/section2_page2_screen_anger_reaction"
+        app:srcCompat="@drawable/neutral" />
+
+    <ImageButton
+        android:id="@+id/section2_page2_screen_happy_reaction"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/global_happy"
+        app:layout_constraintBottom_toBottomOf="@+id/section2_page2_screen_anger_reaction"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_pb"
+        app:layout_constraintTop_toTopOf="@+id/section2_page2_screen_anger_reaction"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/section2_page2_screen_sad_reaction"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/global_sad"
+        app:layout_constraintStart_toStartOf="@+id/section2_page2_screen_anger_reaction"
+        app:layout_constraintTop_toBottomOf="@+id/section2_page2_screen_anger_reaction"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/section2_page2_screen_scared_reaction"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/global_scared"
+        app:layout_constraintBottom_toBottomOf="@+id/section2_page2_screen_sad_reaction"
+        app:layout_constraintEnd_toEndOf="@+id/section2_page2_screen_happy_reaction"
+        app:layout_constraintTop_toTopOf="@+id/section2_page2_screen_sad_reaction"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/scared" />
+</androidx.constraintlayout.widget.ConstraintLayout>

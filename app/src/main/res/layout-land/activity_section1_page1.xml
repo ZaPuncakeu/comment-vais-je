@@ -7,7 +7,7 @@
     tools:context=".Section1Page1">
 
     <Button
-        android:id="@+id/section_1_question_1_next_button"
+        android:id="@+id/section1_page1_screen_next_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="152dp"
         android:layout_height="48dp"
@@ -16,29 +16,29 @@
         android:text="@string/global_next"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar3" />
+        app:layout_constraintEnd_toEndOf="@+id/section1_page1_screen_pb" />
 
     <Button
-        android:id="@+id/section_1_question_1_previous_button"
+        android:id="@+id/section1_page1_screen_previous_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="152dp"
         android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/logo_color"
         android:text="@string/global_previous"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/section_1_question_1_next_button"
-        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar3"
-        app:layout_constraintTop_toTopOf="@+id/section_1_question_1_next_button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/section1_page1_screen_next_btn"
+        app:layout_constraintEnd_toStartOf="@+id/section1_page1_screen_next_btn"
+        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_next_btn" />
 
     <ProgressBar
-        android:id="@+id/personal_progress_bar3"
+        android:id="@+id/section1_page1_screen_pb"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:max="100"
         android:progress="25"
         android:progressDrawable="@drawable/redprogressbar"
@@ -46,60 +46,141 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/section1_page1_title_text_view2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/section_1_question_1"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar3"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar3"
-        app:layout_constraintTop_toBottomOf="@+id/personal_progress_bar3" />
-
     <RadioGroup
+        android:id="@+id/personal_screen_gender_rg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/section_1_question_1_previous_button"
-        app:layout_constraintEnd_toEndOf="@+id/personal_progress_bar3"
-        app:layout_constraintStart_toStartOf="@+id/personal_progress_bar3"
-        app:layout_constraintTop_toBottomOf="@+id/section1_page1_title_text_view2">
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_feeling_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_feeling_label_tv">
 
         <RadioButton
-            android:id="@+id/section_1_question_1_rb_not_good"
+            android:id="@+id/section1_page1_screen_feeling_not_good_option_rb"
             android:layout_width="wrap_content"
-            android:layout_height="67dp"
-            android:layout_marginHorizontal="15dp"
-            android:text="@string/global_not_good"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/global_not_good" />
 
         <RadioButton
-            android:id="@+id/section_1_question_1_rb_neutral"
+            android:id="@+id/section1_page1_screen_feeling_neutral_option_rb"
             android:layout_width="wrap_content"
-            android:layout_height="67dp"
-            android:layout_marginHorizontal="15dp"
-            android:text="@string/global_neutral"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/global_neutral" />
 
         <RadioButton
-            android:id="@+id/section_1_question_1_rb_fairly_good"
+            android:id="@+id/section1_page1_screen_feeling_good_option_rb"
             android:layout_width="wrap_content"
-            android:layout_height="67dp"
-            android:layout_marginHorizontal="15dp"
-            android:text="@string/global_fairly_good"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:text="@string/global_good" />
 
         <RadioButton
-            android:id="@+id/section_1_question_1_rb_very_good"
+            android:id="@+id/section1_page1_screen_feeling_very_good_option_rb"
             android:layout_width="wrap_content"
-            android:layout_height="67dp"
-            android:layout_marginHorizontal="15dp"
-            android:text="@string/global_very_good"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:text="@string/global_very_good" />
+
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/section1_page1_screen_stress_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/section1_page1_screen_stressed_question"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/question3_tired_radio_group"
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_feeling_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/personal_screen_gender_rg" />
+
+    <TextView
+        android:id="@+id/section1_page1_screen_not_stressed_option_label_tv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/section1_page1_screen_not_stressed"
+        android:textAlignment="textEnd"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_stress_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_stress_label_tv" />
+
+    <TextView
+        android:id="@+id/section1_page1_screen_feeling_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:labelFor="@id/personal_screen_age_input_et"
+        android:text="@string/section1_page1_screen_feeling_question"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_pb"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_pb" />
+
+    <SeekBar
+        android:id="@+id/section1_page1_screen_stress_level_sl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        app:layout_constraintBottom_toBottomOf="@+id/section1_page1_screen_extreamly_stressed_option_label_tv"
+        app:layout_constraintEnd_toStartOf="@+id/section1_page1_screen_extreamly_stressed_option_label_tv"
+        app:layout_constraintStart_toEndOf="@+id/section1_page1_screen_not_stressed_option_label_tv"
+        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_extreamly_stressed_option_label_tv" />
+
+    <TextView
+        android:id="@+id/section1_page1_screen_extreamly_stressed_option_label_tv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/section1_page1_screen_extreamly_stressed"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/section1_page1_screen_stress_label_tv"
+        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_not_stressed_option_label_tv" />
+
+    <TextView
+        android:id="@+id/section1_page1_screen_tired_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:labelFor="@id/personal_screen_age_input_et"
+        android:text="@string/section1_page1_screen_tired"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/personal_screen_gender_rg"
+        app:layout_constraintTop_toTopOf="@+id/section1_page1_screen_feeling_label_tv" />
+
+    <RadioGroup
+        android:id="@+id/question3_tired_radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/section1_page1_screen_pb"
+        app:layout_constraintStart_toStartOf="@+id/section1_page1_screen_tired_label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/section1_page1_screen_tired_label_tv">
+
+        <RadioButton
+            android:id="@+id/section1_page1_screen_not_much_option_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/global_not_much" />
+
+        <RadioButton
+            android:id="@+id/section1_page1_screen_pretty_often_option_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/global_pretty_often" />
+
+        <RadioButton
+            android:id="@+id/section1_page1_screen_all_the_time_option_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/global_all_the_time" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
