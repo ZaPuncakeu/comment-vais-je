@@ -23,10 +23,10 @@ public class Summary extends AppCompatActivity {
 
         expandableLv = (ExpandableListView) findViewById(R.id.summary_screen_summary_lv);
         HashMap<String, List<String>> data = getSummary();
+        Log.d("Hashkoupi", data.keySet().toString());
         if(data == null) return;
         expandableListAdapter = new SummaryExpandableListAdapater(this, new ArrayList<String>(data.keySet()), data);
         expandableLv.setAdapter(expandableListAdapter);
-
     }
 
     private HashMap<String, List<String>> getSummary() {
@@ -42,9 +42,9 @@ public class Summary extends AppCompatActivity {
         List<String> personal = new ArrayList<String>();
         personal.add(Utils.R2String(this, R.string.summary_screen_username) + " " + person.getUsername());
         personal.add(Utils.R2String(this, R.string.summary_screen_gender) + " "
-                + (person.getGender() == 0 ? Utils.R2String(this, R.string.summary_screen_gender_man)
+                + (person.getGender() == 0 ? Utils.R2String(this, R.string.summary_screen_gender_woman)
                 :
-                Utils.R2String(this, R.string.summary_screen_gender_woman)
+                Utils.R2String(this, R.string.summary_screen_gender_man)
         ));
 
         personal.add(Utils.R2String(this, R.string.summary_screen_age) + " " + person.getAge() + " " + Utils.R2String(this, R.string.summary_screen_years_old));
@@ -61,8 +61,8 @@ public class Summary extends AppCompatActivity {
         List<String> feelings = new ArrayList<String>();
         feelings.add(Utils.R2String(this, R.string.summary_screen_today_feeling) + " " + Utils.R2String(this, person.getFeeling()));
         feelings.add(Utils.R2String(this, R.string.summary_screen_stress_level) + " " + person.getStress() + " / 100");
-        feelings.add(Utils.R2String(this, R.string.summary_screen_today_feeling) + " " + Utils.R2String(this, person.getTired()));
-        feelings.add(Utils.R2String(this, R.string.summary_screen_anger_frequency) + " " + person.getAnger() + " " + Utils.R2String(this, R.string.summary_screen_out_of));
+        feelings.add(Utils.R2String(this, R.string.summary_screen_feeling_tired) + " " + Utils.R2String(this, person.getTired()));
+        feelings.add(Utils.R2String(this, R.string.summary_screen_anger_frequency) + " " + person.getAnger() + " " + Utils.R2String(this, R.string.summary_screen_out_of) + " 10");
         feelings.add(Utils.R2String(this, R.string.summary_screen_anger_management) + " " + Utils.R2String(this, person.getAngerManagement()));
         summary.put(Utils.R2String(this, R.string.summary_screen_feelings), feelings);
 
@@ -92,7 +92,7 @@ public class Summary extends AppCompatActivity {
         }
 
         boolean knows_bs = person.getKnows_blood_sugar();
-        physical.add(Utils.R2String(this, R.string.section3_page1_screen_blood_sugar) + " " + Utils.R2String(this, knows_bs ? R.string.global_yes : R.string.global_no));
+        physical.add(Utils.R2String(this, R.string.section3_page1_screen_know_blood_sugar) + " " + Utils.R2String(this, knows_bs ? R.string.global_yes : R.string.global_no));
         if(knows_c) {
             physical.add(Utils.R2String(this, R.string.summary_screen_blood_sugar) + " " + person.getBlood_sugar() + " " + Utils.R2String(this, R.string.global_g_l));
         }

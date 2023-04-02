@@ -2,7 +2,9 @@ package com.projet.cvj_ihm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -11,11 +13,15 @@ public class Section2Page2 extends AppCompatActivity {
     private PageHandler ph;
     private ImageButton[] reactions;
     int selected = -1;
+    private final int currentStep = 7;
+    private SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LanguageManager.setLanguage(this);
         setContentView(R.layout.activity_section2_page2);
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
         if(!getIntent().hasExtra("person")) {
             Utils.error(this, R.string.global_missing_inputs);
@@ -32,6 +38,8 @@ public class Section2Page2 extends AppCompatActivity {
         reactions[3] = (ImageButton) findViewById(R.id.section2_page2_screen_scared_reaction);
         reactions[4] = (ImageButton) findViewById(R.id.section2_page2_screen_neutral_reaction);
 
+        selected = sharedPref.getInt("selectedEmotion2", -1);
+
         for(int i = 0; i < 5; ++i) {
             if(i == selected) {
                 reactions[i].setBackgroundColor(getResources().getColor(R.color.logo_color));
@@ -46,12 +54,15 @@ public class Section2Page2 extends AppCompatActivity {
                     if(selected != -1)
                         reactions[selected].setBackgroundColor(getResources().getColor(R.color.white));
                     selected = current;
+                    sharedPref.edit().putInt("selectedEmotion2", current).commit();
                     reactions[selected].setBackgroundColor(getResources().getColor(R.color.logo_color));
                 }
             });
         }
 
         ph = new PageHandler(
+                sharedPref,
+                currentStep,
                 this,
                 R.id.section2_page2_screen_next_btn,
                 R.id.section2_page2_screen_previous_btn,
@@ -67,5 +78,11 @@ public class Section2Page2 extends AppCompatActivity {
                     return person;
                 }
         );
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sharedPref.edit().putInt("step", currentStep).commit();
     }
 }

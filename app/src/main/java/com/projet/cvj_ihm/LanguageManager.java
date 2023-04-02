@@ -1,7 +1,9 @@
 package com.projet.cvj_ihm;
 
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +19,8 @@ public class LanguageManager {
     }
 
     public static void setLanguage(AppCompatActivity app) {
-        Log.v("bruh", "Here!!!!");
+
         String lang = langKeys[selected];
-        Log.v("language", lang);
         Locale locale = new Locale(lang);
         Locale.setDefault(locale);
         Configuration config = new Configuration();

@@ -2,6 +2,7 @@ package com.projet.cvj_ihm;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,8 @@ public class SummaryExpandableListAdapater extends BaseExpandableListAdapter {
     private HashMap<String, List<String>> listContent;
     public SummaryExpandableListAdapater(Context context, List<String> titles,
                                            HashMap<String, List<String>> listContent) {
+        Log.d("Hashkoupi", titles.toString());
+        Log.d("Hashkoupi", listContent.toString());
         this.context = context;
         this.titles = titles;
         this.listContent = listContent;
@@ -59,6 +62,7 @@ public class SummaryExpandableListAdapater extends BaseExpandableListAdapter {
     @Override
     // Gets the data associated with the given group.
     public Object getGroup(int listPosition) {
+        Log.d("Hashkoupi", this.titles.get(listPosition));
         return this.titles.get(listPosition);
     }
 

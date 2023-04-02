@@ -31,6 +31,10 @@ public class Utils {
         Toast.makeText(app, app.getResources().getString(msg),Toast.LENGTH_SHORT).show();
     }
 
+    public static void toast(AppCompatActivity app, String msg) {
+        Toast.makeText(app, msg,Toast.LENGTH_SHORT).show();
+    }
+
     public static void error(AppCompatActivity app, int msg) {
         toast(app, msg);
         vibrate(app, 100);

@@ -239,11 +239,11 @@ public class Person implements Parcelable {
         }
 
         int[] reactions = {
-                R.string.global_angry,
-                R.string.global_neutral,
-                R.string.global_happy,
                 R.string.global_sad,
-                R.string.global_scared
+                R.string.global_happy,
+                R.string.global_angry,
+                R.string.global_scared,
+                R.string.global_neutral
         };
         return reactions[reaction[position]];
     }

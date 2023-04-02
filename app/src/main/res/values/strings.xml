@@ -74,12 +74,12 @@
     <string name="summary_screen_gender_woman">Woman</string>
     <string name="summary_screen_age">Age:</string>
     <string name="summary_screen_years_old">years old</string>
-    <string name="summary_screen_weight">Weight</string>
+    <string name="summary_screen_weight">Weight:</string>
     <string name="summary_screen_kg" translatable="false">Kg</string>
     <string name="summary_screen_height">Height:</string>
     <string name="summary_screen_cm" translatable="false">Cm</string>
     <string name="summary_screen_married">Married:</string>
-    <string name="summary_screen_today_feeling">Today, you\'re feeling</string>
+    <string name="summary_screen_today_feeling">Today you feel:</string>
     <string name="summary_screen_stress_level">Stress level:</string>
     <string name="summary_screen_feeling_tired">You feel tired:</string>
     <string name="summary_screen_anger_frequency">You feel angry/desperate/irritated</string>
@@ -99,4 +99,5 @@
     <string name="summary_screen_feelings">Your feelings</string>
     <string name="summary_screen_reactions">Your reactions</string>
     <string name="summary_screen_your_physical">Your physical health</string>
+    <string name="summar_screen_result">Result</string>
 </resources>
