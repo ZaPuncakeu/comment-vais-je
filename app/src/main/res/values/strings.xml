@@ -101,4 +101,5 @@
     <string name="summary_screen_your_physical">Your physical health</string>
     <string name="summary_screen_save">Save</string>
     <string name="summary_screen_file_saved">Fichier enregistré dans le dossier Téléchargements</string>
+    <string name="summary_screen_send_email">Send it via email</string>
 </resources>

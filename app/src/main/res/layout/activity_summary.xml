@@ -26,7 +26,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/summary_screen_save_btn"
+        app:layout_constraintBottom_toTopOf="@+id/summary_screen_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/summary_screen_title_tv">
@@ -38,17 +38,43 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/summary_screen_save_btn"
+        android:id="@+id/summary_screen_save"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="152dp"
         android:layout_height="48dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@color/logo_color"
         android:text="@string/summary_screen_save"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/summary_screen_exit_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/summary_screen_exit_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/logo_color"
+        android:text="@string/global_exit"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/summary_screen_send_email_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/logo_color"
+        android:text="@string/summary_screen_send_email"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/summary_screen_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/summary_screen_save" />
 
     <Button
         android:id="@+id/summary_screen_previous_btn"
@@ -59,7 +85,8 @@
         android:background="@color/logo_color"
         android:text="@string/global_previous"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/summary_screen_save_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/summary_screen_exit_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/summary_screen_save_btn" />
+        app:layout_constraintTop_toTopOf="@+id/summary_screen_exit_btn"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

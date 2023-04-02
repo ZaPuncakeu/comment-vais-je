@@ -5,9 +5,12 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +34,9 @@ public class Summary extends AppCompatActivity {
     private ExpandableListAdapter expandableListAdapter;
 
     private Button save;
+    private Button exit;
+    private Button previous;
+    private Button send;
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
@@ -66,13 +72,20 @@ public class Summary extends AppCompatActivity {
             Log.e(APP_TAG,"Error␣I/O",e);
         }
     }
+    private SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LanguageManager.setLanguage(this);
+        sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         setContentView(R.layout.activity_summary);
 
-        save = findViewById(R.id.summary_screen_save_btn);
+        save = (Button) findViewById(R.id.summary_screen_save);
+        send = (Button) findViewById(R.id.summary_screen_send_email_btn);
+        exit = (Button) findViewById(R.id.summary_screen_exit_btn);
+        previous = (Button) findViewById(R.id.summary_screen_previous_btn);
+
         expandableLv = (ExpandableListView) findViewById(R.id.summary_screen_summary_lv);
         HashMap<String, List<String>> data = getSummary();
         Log.d("Hashkoupi", data.keySet().toString());
@@ -85,6 +98,35 @@ public class Summary extends AppCompatActivity {
             public void onClick(View view) {
                 verifyStoragePermissions(Summary.this);
                 writeSummaryInFile(data);
+            }
+        });
+
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "cvj Poll data");
+
+                intent.putExtra(Intent.EXTRA_TEXT, serializeSummary(data));
+
+                intent.setType("text/plain");
+
+                startActivity(Intent.createChooser(intent, "Send email"));
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sharedPref.edit().clear().commit();
+                System.exit(0);
             }
         });
     }
