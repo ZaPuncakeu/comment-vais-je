@@ -95,9 +95,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        sharedPref.edit().putInt("step", currentStep).commit();
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        sharedPref.edit().putInt("step", currentStep).commit();
+//    }
 }

@@ -99,5 +99,6 @@
     <string name="summary_screen_feelings">Your feelings</string>
     <string name="summary_screen_reactions">Your reactions</string>
     <string name="summary_screen_your_physical">Your physical health</string>
-    <string name="summar_screen_result">Result</string>
+    <string name="summary_screen_save">Save</string>
+    <string name="summary_screen_file_saved">Fichier enregistré dans le dossier Téléchargements</string>
 </resources>

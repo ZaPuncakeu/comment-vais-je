@@ -1,32 +1,92 @@
 package com.projet.cvj_ihm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Summary extends AppCompatActivity {
 
+    private static final String APP_TAG = "summary_file_error";
     private ExpandableListView expandableLv;
     private ExpandableListAdapter expandableListAdapter;
+
+    private Button save;
+
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
+
+    public static void verifyStoragePermissions(Activity activity) {
+        int permission = ActivityCompat.checkSelfPermission(activity,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
+    }
+
+    public void writeSummaryInFile(HashMap<String, List<String>> data) {
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        File fileout = new File(folder, "cvj_ihm-"+new java.util.Date()+data.get(Utils.R2String(this, R.string.summary_screen_personal)).get(0)+"-data.txt");
+        try (FileOutputStream fos = new FileOutputStream(fileout)) {
+            PrintStream ps = new PrintStream(fos);
+            Utils.toast(this, R.string.summary_screen_file_saved);
+            ps.println(serializeSummary(data));
+            ps.close();
+        } catch (FileNotFoundException e) {
+            Log.e(APP_TAG,"File␣not␣found",e);
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e(APP_TAG,"Error␣I/O",e);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
+        save = findViewById(R.id.summary_screen_save_btn);
         expandableLv = (ExpandableListView) findViewById(R.id.summary_screen_summary_lv);
         HashMap<String, List<String>> data = getSummary();
         Log.d("Hashkoupi", data.keySet().toString());
         if(data == null) return;
         expandableListAdapter = new SummaryExpandableListAdapater(this, new ArrayList<String>(data.keySet()), data);
         expandableLv.setAdapter(expandableListAdapter);
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                verifyStoragePermissions(Summary.this);
+                writeSummaryInFile(data);
+            }
+        });
     }
 
     private HashMap<String, List<String>> getSummary() {
@@ -100,4 +160,18 @@ public class Summary extends AppCompatActivity {
         summary.put(Utils.R2String(this, R.string.summary_screen_your_physical), physical);
         return summary;
     }
+
+    public String serializeSummary(HashMap<String, List<String>> data)
+    {
+        String output = "";
+        for(Map.Entry<String, List<String>> section : data.entrySet()) {
+            output += section.getKey() + "\n";
+            for(String val : section.getValue()) {
+                output += val + "\n";
+            }
+        }
+
+        return output;
+    }
+
 }

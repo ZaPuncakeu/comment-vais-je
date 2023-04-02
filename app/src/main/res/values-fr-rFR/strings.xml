@@ -94,5 +94,5 @@
     <string name="summary_screen_feelings">Vos sentiments</string>
     <string name="summary_screen_reactions">Vos réactions</string>
     <string name="summary_screen_your_physical">Votre santé physique</string>
-    <string name="summar_screen_result">Resultat</string>
+    <string name="summary_screen_save">Sauvegarder</string>
 </resources>

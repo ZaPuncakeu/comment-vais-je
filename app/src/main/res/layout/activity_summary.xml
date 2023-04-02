@@ -26,7 +26,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/summary_screen_result_btn"
+        app:layout_constraintBottom_toTopOf="@+id/summary_screen_save_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/summary_screen_title_tv">
@@ -38,14 +38,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/summary_screen_result_btn"
+        android:id="@+id/summary_screen_save_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="152dp"
         android:layout_height="48dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="40dp"
         android:background="@color/logo_color"
-        android:text="@string/summar_screen_result"
+        android:text="@string/summary_screen_save"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -59,7 +59,7 @@
         android:background="@color/logo_color"
         android:text="@string/global_previous"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/summary_screen_result_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/summary_screen_save_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/summary_screen_result_btn" />
+        app:layout_constraintTop_toTopOf="@+id/summary_screen_save_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

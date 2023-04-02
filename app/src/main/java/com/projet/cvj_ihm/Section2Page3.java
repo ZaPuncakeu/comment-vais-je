@@ -64,9 +64,9 @@ public class Section2Page3 extends AppCompatActivity {
         );
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        sharedPref.edit().putInt("step", currentStep).commit();
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        sharedPref.edit().putInt("step", currentStep).commit();
+//    }
 }
